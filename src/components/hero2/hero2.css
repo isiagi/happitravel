@@ -1,0 +1,51 @@
+.hero2__conatiner {
+    min-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero2__wrapper1 {
+    max-width: 500px;
+    color: #270da7;
+    line-height: 3rem;
+}
+
+.hero2__wrapper1 > h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero2__wrapper2 > img{
+  width: 290px;
+  height: 390px;
+  border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;
+}
+
+.hero2__g {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero2__wrapper1 > button {
+    background-color: #fffe00;
+    padding: 7px;
+    border-radius: 5px;
+    color: #270da7;
+}
+
+.hero2__sub {
+    max-width: 300px;
+    border-left: 3px solid #fffe00;
+    background-color: #fff;
+    height: 100px;
+    padding: 30px;
+}
+
+.hero2__sub1 {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}

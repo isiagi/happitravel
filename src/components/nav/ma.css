@@ -1,0 +1,20 @@
+.nav__conatiner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    width: 100%;
+    color: #270da7;
+    z-index: 999;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links li {
+    width: 90px;
+}
