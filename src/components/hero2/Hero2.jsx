@@ -1,4 +1,4 @@
-import React from "react";
+
 import img from "../../assets/images/2.jpg";
 
 import "./hero2.css";
@@ -6,7 +6,7 @@ import "./hero2.css";
 const Hero2 = () => {
   return (
     <div className="hero2__conatiner">
-      <div className="place__items__center">
+      <div className="place__items__center" style={{gap: '7rem', flexWrap: 'wrap'}}>
         <div className="hero2__wrapper1">
           <h2>Welcome To HappiStudy</h2>
           <p>

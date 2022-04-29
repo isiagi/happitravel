@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import img from "../../assets/images/2.jpg";
+import {data} from '../../utils/data'
 
 import "./project.css";
 
@@ -27,110 +27,33 @@ const Project = () => {
   };
   return (
     <div className="project__container">
-      <div style={{textAlign: 'center', maxWidth: '500px'}}>
-        <h2 style={{fontSize: '3rem'}}>Our Lastest Courses</h2>
-        <p style={{paddingBlock: '2rem'}}>
+      <div style={{ textAlign: "center", maxWidth: "500px" }}>
+        <h2 style={{ fontSize: "3rem" }}>Our Lastest Courses</h2>
+        <p style={{ paddingBlock: "2rem" }}>
           Happi Travel is regulated Happi Group of companies aiming travel to
           Europea countries
         </p>
       </div>
       <div className="project__card">
-        <Carousel responsive={responsive}>
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
-
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
-
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
-
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
-
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
-
-          <div className="card card-shadow">
-            <div className="card-img">
-              <img src={img} alt="bag" />
-            </div>
-            <div className="card-header">
-              <h4>head</h4>
-              <h2 className="card__h4">Business Administration</h2>
-              <p>
-                Happi Travel is regulated Happi Group of companies aiming travel
-                to Europea countries
-              </p>
-              <hr />
-              <button>View More</button>
-            </div>
-          </div>
+        <Carousel responsive={responsive} autoPlay={true} infinite={true}>
+          {data.map(({img, head, content, tag, id}) => {
+            return (
+              <div key={id} className="card card-shadow">
+                <div className="card-img">
+                  <img src={img} alt="bag" />
+                </div>
+                <div className="card-header">
+                  <h4>{tag}</h4>
+                  <h2 className="card__h4">{head}</h2>
+                  <p>
+                    {content}
+                  </p>
+                  <hr />
+                  <button>View More</button>
+                </div>
+              </div>
+            );
+          })}
         </Carousel>
       </div>
     </div>

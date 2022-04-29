@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Footer from './Footer'
 import LastFooter from './LastFooter'
 

@@ -18,3 +18,40 @@
 .nav__links li {
     width: 90px;
 }
+
+.toogle__icon {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+
+    .toogle__icon {
+        display: block;
+    }
+
+    .place__content {
+        display: block;
+        position: absolute;
+        top: calc(100% + 0vh);
+        background-color: rgba(255, 255, 255, 0.9);; 
+        z-index: 90; 
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .place__content ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .place__content ul li {
+        padding-block: 1.5rem;
+    }
+
+    .place__content.active {
+        right: 0;
+    }
+}

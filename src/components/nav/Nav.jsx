@@ -1,4 +1,4 @@
-import React from 'react';
+import {useState} from 'react';
 import { MdTableRows } from 'react-icons/md';
 import { GiCancel } from 'react-icons/gi';
 import { NavLink } from 'react-router-dom';
@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import './nav.css';
 
 const Nav = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div className="nav__wrapper">

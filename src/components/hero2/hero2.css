@@ -5,11 +5,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+    color: #433b6d;
 }
 
 .hero2__wrapper1 {
     max-width: 500px;
-    color: #270da7;
+    color: #433b6d;
     line-height: 3rem;
 }
 
@@ -19,21 +20,22 @@
 }
 
 .hero2__wrapper2 > img{
-  width: 290px;
-  height: 390px;
+  width: 250px;
+  height: 350px;
   border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;
 }
 
 .hero2__g {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .hero2__wrapper1 > button {
     background-color: #fffe00;
     padding: 7px;
     border-radius: 5px;
-    color: #270da7;
+    color: #433b6d;
 }
 
 .hero2__sub {

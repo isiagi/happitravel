@@ -49,12 +49,13 @@ button {
   border: none;
   outline: none;
   background: transparent;
+  display: block;
 }
 
 input {
-  background: #361500;
   padding: 1rem;
-  /* margin:.5rem; */
+  color: #433b6d;
+  border: 1px solid #433b6d;
 }
 
 textarea {
