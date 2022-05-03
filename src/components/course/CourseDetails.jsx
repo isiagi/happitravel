@@ -1,26 +1,36 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import img from "../../assets/images/1.jpg";
 
 import "./cor.css";
 
 const Course = () => {
-
   React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div style={{ background: "whitesmoke" }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      style={{ background: "whitesmoke" }}
+    >
       <div className="course__container">
         <h1 style={{ color: "white", fontSize: "4rem" }}>Course Details</h1>
       </div>
       <div
         className="container"
-        style={{ display: "flex", flexWrap: "wrap", paddingBlock: "7rem", gap: "10px" }}>
-      
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          paddingBlock: "7rem",
+          gap: "10px",
+        }}
+      >
         <div className="course__cat">
           <div>
             <h4>Category</h4>
@@ -98,13 +108,15 @@ const Course = () => {
         </div>
 
         <div>
-          <div style={{maxWidth: '700px',color: '#433b6d', lineHeight: '30px'}}>
+          <div
+            style={{ maxWidth: "700px", color: "#433b6d", lineHeight: "30px" }}
+          >
             <img src={img} alt="hey" />
             <div>
-            <div style={{marginBlock: '3rem'}}>
-              <h2>Bachelors Degree In Computer Science</h2>
-              <hr />
-            </div>
+              <div style={{ marginBlock: "3rem" }}>
+                <h2>Bachelors Degree In Computer Science</h2>
+                <hr />
+              </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 eget lectus eu quam lacinia volutpat. Vivamus varius tortor
@@ -140,7 +152,7 @@ const Course = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,6 +2,8 @@ import { CgHeadset } from "react-icons/cg";
 import { HiOutlineMail } from "react-icons/hi";
 import { GoLocation } from "react-icons/go";
 
+import { motion } from "framer-motion";
+
 import "./contact.css";
 import React from "react";
 
@@ -11,7 +13,13 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="contact__container container">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="contact__container container"
+    >
       <div className="contact__wrapper">
         <h2 style={{ color: "white", fontSize: "4rem" }}>Contact Us</h2>
       </div>
@@ -76,7 +84,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

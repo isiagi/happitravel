@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../assets/images/2.jpg";
 
 import {latestNews} from '../../utils/data'
 

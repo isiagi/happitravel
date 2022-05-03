@@ -1,20 +1,30 @@
 import React from "react";
 import { Link, Outlet, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./cor.css";
 
 const Course = () => {
   const para = useParams();
 
+  const pat = Object.values(para);
   React.useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
-  console.log(para);
   return (
-    <div style={{ background: "whitesmoke" }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 1.5 }}
+      style={{ background: "whitesmoke" }}
+    >
       <div className="course__container">
         <h1 style={{ color: "white", fontSize: "4rem" }}>Our Courses</h1>
+        <p
+          style={{ color: "#433b6d", fontSize: "1.9rem", paddingBlock: "1rem" }}
+        >{`Courses/${pat[0]}`}</p>
       </div>
       <div
         className="container"
@@ -98,7 +108,7 @@ const Course = () => {
 
         <Outlet />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
