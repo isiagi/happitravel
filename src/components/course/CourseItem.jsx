@@ -14,25 +14,7 @@ const CourseItem = () => {
 
   return (
     <div className="course__flex">
-      {/* <Link to="/courses/3">
-        <div className="course__card">
-          <div className="course__img">
-            <img src={img} alt="hey" />
-          </div>
-          <div className="course__tag">
-            <p>scholarship</p>
-          </div>
-          <div className="course__header">
-            <h3 style={{ color: "#270da7" }}>Bachelor's Degree Scholarship</h3>
-            <p>
-              We have fully funded scholaship in Marketing, Civil Engineering
-            </p>
-            <button style={{ fontWeight: "bold", color: "#270da7" }}>
-              Read More
-            </button>
-          </div>
-        </div>
-      </Link> */}
+      
       {Business.map((item) => {
         return (
           <Link to={`/courses/${item.id}`}>

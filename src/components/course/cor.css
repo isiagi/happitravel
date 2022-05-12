@@ -1,8 +1,3 @@
-/* .course__wra {
-  display: flex;
-  flex-wrap: wrap-reverse;
-} */
-
 .course__container {
   min-height: 70vh;
   background-image: linear-gradient(
@@ -68,7 +63,7 @@
 
 .course__cat {
   background-color: #fff;
-  height: 40vh;
+  height: fit-content;
   width: 30%;
   color: #433b6d;
   padding-left: 1rem;

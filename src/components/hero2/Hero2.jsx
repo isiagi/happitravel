@@ -8,7 +8,7 @@ const Hero2 = () => {
     <div className="hero2__conatiner">
       <div className="place__items__center" style={{gap: '7rem', flexWrap: 'wrap'}}>
         <div className="hero2__wrapper1">
-          <h2>Welcome To HappiStudy</h2>
+          <h2>Welcome To Happitravel and logisticcs</h2>
           <p>
             Happi Travel is regulated Happi Group of companies aiming travel to
             Europea countries

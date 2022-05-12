@@ -1,0 +1,29 @@
+.service__container {
+  min-height: 150vh;
+  background: url("../../assets/images/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #433b6d;
+}
+
+.service__icon {
+  font-size: 5rem;
+  color: #fffe00;
+}
+
+.service__wraper {
+  border: 1px solid whitesmoke;
+  display: flex;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  cursor: pointer;
+}
