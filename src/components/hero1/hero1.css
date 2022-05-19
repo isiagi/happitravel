@@ -13,6 +13,13 @@
     margin-left: 100px;
 }
 
+.hero__wrapper1 {
+    max-width: 550px;
+    color: #fff;
+    align-self: center;
+   text-align: center;
+}
+
 .hero__wrapper > h1 {
     font-size: 4rem;
 }
@@ -26,4 +33,22 @@
     padding: 15px;
     border-radius: 5px;
     color: #270da7;
+}
+
+/* herowrapper1 */
+
+.hero__wrapper1 > button {
+    background-color: #fffe00;
+    padding: 15px;
+    border-radius: 5px;
+    color: #270da7;
+    margin: 0 auto;
+}
+
+.hero__wrapper1 > h1 {
+    font-size: 4.5rem;
+}
+
+.hero__wrapper1 > p {
+    padding-block: 2rem;
 }

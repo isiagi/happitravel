@@ -1,0 +1,83 @@
+.travel__container1 {
+    min-height: 120vh;
+    background-color: whitesmoke;
+    color: #270da7 ;
+  }
+.travel__container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.travel__img {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.travel__img > img {
+  max-width: 100%;
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.travel__img > .travel__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.travel__content__star {
+  border-style: solid;
+  border-color: transparent transparent #fffe00 transparent;
+  border-width: 0 10px 10px 10px;
+  height: 0;
+  width: 40px;
+  box-sizing: content-box;
+  position: relative;
+  margin: 10px 0 40px 0;
+}
+
+.travel__content__star:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #433b6d transparent transparent transparent;
+  border-width: 50px 30px 0 30px;
+}
+
+.travel__content__star:hover {
+  border-color: #270da7 transparent transparent transparent;
+}
+
+.travel__content__star:after:hover {
+  border-color: #270da7 transparent transparent transparent;
+}
+
+.travel__content__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.travel__content {
+  margin-bottom: 30px;
+  color: #270da7;
+  max-width: 100%;
+  width: 50vw;
+  height: 600px;
+}
+
+.travel__content__para:hover {
+  color: #433b6d;
+}

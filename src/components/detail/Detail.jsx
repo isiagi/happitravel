@@ -39,6 +39,7 @@ const Detail = () => {
         return null;
     }
   };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

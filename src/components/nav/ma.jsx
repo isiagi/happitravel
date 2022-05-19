@@ -4,6 +4,9 @@ import { GiCancel } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
 
+import * as Scroll from 'react-scroll';
+import { Link as Move, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+
 import "./ma.css";
 
 const Ma = () => {
@@ -22,6 +25,9 @@ const Ma = () => {
         <ul className="nav__links">
           <li onClick={() => setOpen(false)}>
             <Link to="/">Home</Link>
+          </li>
+          <li onClick={() => setOpen(false)} >
+            <Move to="service">Services</Move>
           </li>
           <li onClick={() => setOpen(false)}>
             <Link to="/courses/studies">Courses</Link>

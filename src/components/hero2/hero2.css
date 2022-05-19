@@ -19,7 +19,18 @@
     margin-bottom: 2rem;
 }
 
-.hero2__wrapper2 > img{
+.hero2__wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero2__hey {
+    margin-left: -100px;
+}
+
+.hero2__wrapper2  div > img{
   width: 250px;
   height: 350px;
   border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;

@@ -29,7 +29,7 @@ const Hero1 = () => {
   ];
 
   return (
-    <Fade arrows={false} duration={3000}>
+    <Fade arrows={false} duration={4000} pauseOnHover={false} Easing={"ease"}>
       {data.map(({ id, img, head, para }) => (
         <div
           className="hero__container"
@@ -46,7 +46,7 @@ const Hero1 = () => {
             key: { id },
           }}
         >
-          <div className="hero__wrapper">
+          <div className={id === 2 ? "hero__wrapper1" : "hero__wrapper"}>
             <h1>{head}</h1>
             <p>{para}</p>
             <button>
