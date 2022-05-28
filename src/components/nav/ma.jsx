@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { BsBookHalf } from "react-icons/bs";
 import { MdTableRows } from "react-icons/md";
 import { GiCancel } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
+
+import { Link as Move } from 'react-scroll'
 
 import "./ma.css";
 
@@ -14,8 +15,8 @@ const Ma = () => {
     <div className="nav__conatiner">
       <Link to="/">
         <div className="place__items__center">
-          <BsBookHalf style={{ fontSize: "3rem" }} />
-          <h1>HappiTravel</h1>
+          {/* <BsBookHalf style={{ fontSize: "3rem" }} /> */}
+          <h2>happitravelandlogistics</h2>
         </div>
       </Link>
       <div className="place__header">
@@ -23,6 +24,9 @@ const Ma = () => {
         <ul className="nav__links">
           <li onClick={() => setOpen(false)}>
             <Link to="/">Home</Link>
+          </li>
+          <li onClick={() => setOpen(false)} >
+            <Link to="/service">Services</Link>
           </li>
           <li onClick={() => setOpen(false)}>
             <Link to="/courses/studies">Courses</Link>

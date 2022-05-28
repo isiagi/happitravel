@@ -1,0 +1,10 @@
+.course__container1 {
+    min-height: 70vh;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

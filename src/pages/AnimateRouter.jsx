@@ -10,6 +10,8 @@ import BankItem from "../components/course/Bank";
 import CourseDetails from "../components/course/CourseDetails";
 import Contact from "../components/contact/Contact";
 import Social from '../components/course/Social'
+import Detail from "../components/detail/Detail";
+import Service from "./service/Service";
 
 const Router = () => {
   const location = useLocation();
@@ -26,6 +28,10 @@ const Router = () => {
         </Route>
         <Route path="/courses/:id" element={<CourseDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/detail/:id" element={<Detail />}>
+         
+        </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

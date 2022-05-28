@@ -1,0 +1,39 @@
+.service__container {
+  min-height: 150vh;
+  background: linear-gradient(
+      90deg,
+      rgba(39, 13, 167, 0.7049194677871149) 0%,
+      rgba(255, 254, 0, 0.6264880952380952) 99%,
+      rgba(121, 119, 9, 1) 100%
+    ),
+    url("../../assets/images/map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.service__icon {
+  font-size: 5rem;
+  color: #fffe00;
+}
+
+.service__wraper {
+  border: 1px solid whitesmoke;
+  display: flex;
+  min-height: 30vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.service__wraper:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.service__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  cursor: pointer;
+}

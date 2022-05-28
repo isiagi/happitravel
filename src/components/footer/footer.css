@@ -1,5 +1,5 @@
 .footer__container {
-    min-height: 65vh;
+    min-height:85vh;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
@@ -21,6 +21,7 @@
     justify-content: space-between;
     width: 100%;
     flex-wrap: wrap;
+    gap: 13px;
 }
 
 .lastFooter__wrapper {

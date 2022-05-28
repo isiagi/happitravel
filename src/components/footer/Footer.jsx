@@ -1,4 +1,3 @@
-
 import { BsFacebook } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
@@ -42,20 +41,39 @@ const Footer = () => {
             />
           </div>
         </div>
+
         <div className="footer__links">
           <div>
-            <h3>Quick Link</h3>
+            <h3>Services</h3>
           </div>
           <div>
             <ul>
               <li>
-                <p to="/">Home</p>
+                <p to="/wire">Study Abroad</p>
               </li>
               <li>
-                <p to="/about">About Us</p>
+                <p to="/soft">Work Abroad</p>
               </li>
               <li>
-                <p to="/contact">Contact</p>
+                <p to="/contact">Permanent Residence</p>
+              </li>
+              <li>
+                <p to="/">Air Frieghts</p>
+              </li>
+              <li>
+                <p to="/">Water Frieghts</p>
+              </li>
+              <li>
+                <p to="/">Clearing And Forwarding</p>
+              </li>
+              <li>
+                <p to="/">Passport Processing</p>
+              </li>
+              <li>
+                <p to="/">Visa Processing</p>
+              </li>
+              <li>
+                <p to="/">Air Ticket Processing</p>
               </li>
             </ul>
           </div>
@@ -103,19 +121,21 @@ const Footer = () => {
           <div>
             <ul>
               <li>
-                <CgHeadset style={{ color: "#fffe00",fontSize: "2.5rem" }} /> +256 785988864 / +256
-                758914876
+                <CgHeadset style={{ color: "#fffe00", fontSize: "2.5rem" }} />{" "}
+                +256 785988864 / +256 758914876
               </li>
               <li>
                 <div
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: '10px'
+                    gap: "10px",
                   }}
                 >
                   <div>
-                    <HiOutlineMail style={{ color: "#fffe00",fontSize: "2.5rem", }} />
+                    <HiOutlineMail
+                      style={{ color: "#fffe00", fontSize: "2.5rem" }}
+                    />
                   </div>
                   <div>
                     <p>info@happitravelandlogistics.com</p>
@@ -124,22 +144,44 @@ const Footer = () => {
                 </div>
               </li>
               <li>
-              <div
+                <div
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    gap: '10px'
+                    gap: "10px",
                   }}
                 >
                   <div>
-                    <GoLocation style={{ color: "#fffe00",fontSize: "2.5rem", }} />
+                    <GoLocation
+                      style={{ color: "#fffe00", fontSize: "2.5rem" }}
+                    />
                   </div>
                   <div>
-                    <p>Ham Towers,Level 3, RM 9 <br />Opp Makerere Main Gate, Kampala.</p>
+                    <p>
+                      Ham Towers,Level 3, RM 9 <br />
+                      Opp Makerere Main Gate, Kampala.
+                    </p>
                     <p>MM Plaza 3rd Floor Rm T20</p>
                   </div>
                 </div>
-               
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer__links">
+          <div>
+            <h3>Quick Link</h3>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <p to="/">Home</p>
+              </li>
+              <li>
+                <p to="/about">About Us</p>
+              </li>
+              <li>
+                <p to="/contact">Contact</p>
               </li>
             </ul>
           </div>
