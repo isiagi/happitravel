@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: center;
+  background-attachment: fixed;
 }
 
 .good__grid {

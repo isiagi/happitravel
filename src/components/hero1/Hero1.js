@@ -29,7 +29,7 @@ const Hero1 = () => {
   ];
 
   return (
-    <Fade arrows={false} duration={4000} pauseOnHover={false} Easing={"ease"}>
+    <Fade arrows={true} duration={4000} pauseOnHover={false} Easing={"ease"}>
       {data.map(({ id, img, head, para }) => (
         <div
           className="hero__container"

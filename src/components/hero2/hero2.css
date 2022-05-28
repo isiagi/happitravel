@@ -1,5 +1,5 @@
 .hero2__conatiner {
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: whitesmoke;
     display: flex;
     flex-direction: column;
@@ -36,11 +36,18 @@
   border-radius: 50% 60% 50% 50% / 70% 70% 40% 40%;
 }
 
-.hero2__g {
+/* .hero2__g {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+} */
+
+.hero2__g {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
 }
+
 
 .hero2__wrapper1 > button {
     background-color: #fffe00;
@@ -50,10 +57,10 @@
 }
 
 .hero2__sub {
-    max-width: 300px;
+    /* max-width: 600px; */
     border-left: 3px solid #fffe00;
     background-color: #fff;
-    height: 100px;
+    /* min-height: 150px; */
     padding: 30px;
 }
 
