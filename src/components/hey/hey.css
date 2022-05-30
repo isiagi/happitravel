@@ -1,0 +1,24 @@
+
+
+
+.hey__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items: center;
+}
+
+.hey__grid > div > ul {
+    font-size: 1.3em;
+    line-height: 3em;
+    color: #433b6d;
+}
+
+.span__text {
+    margin-right: 2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #fffe00;
+    padding: 11px;
+    color: #433b6d;
+}

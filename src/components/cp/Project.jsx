@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 import {data} from '../../utils/data'
 
@@ -27,7 +28,7 @@ const Project = () => {
   };
   return (
     <div className="project__container">
-      <div style={{ textAlign: "center", maxWidth: "500px" }}>
+      <div style={{ textAlign: "center", maxWidth: "500px",paddingTop: '4rem' }}>
         <h2 style={{ fontSize: "3rem" }}>Our Lastest Courses</h2>
         <p style={{ paddingBlock: "2rem" }}>
           Happi Travel is regulated Happi Group of companies aiming travel to
@@ -36,7 +37,7 @@ const Project = () => {
       </div>
       <div className="project__card">
         <Carousel responsive={responsive} autoPlay={true} infinite={true}>
-          {data.map(({img, head, content, tag, id}) => {
+          {data.map(({img, head, content, tag, id, path}) => {
             return (
               <div key={id} className="card card-shadow">
                 <div className="card-img">
@@ -49,7 +50,7 @@ const Project = () => {
                     {content}
                   </p>
                   <hr />
-                  <button>View More</button>
+                  <button><Link to={path}>Contact Us</Link></button>
                 </div>
               </div>
             );

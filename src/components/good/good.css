@@ -1,5 +1,5 @@
 .good__container {
-  min-height: 95vh;
+  min-height: 120vh;
   background: linear-gradient(
       rgba(2, 0, 36, 0.5),
       rgba(28, 28, 194, 0.5)
@@ -30,7 +30,7 @@
 
 .good__context {
   display: grid;
-  row-gap: 3rem;
+  row-gap: 5rem;
 }
 
 .good__flex > h3 {

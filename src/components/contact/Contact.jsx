@@ -56,31 +56,20 @@ const Contact = () => {
                 Ham Towers,Level 3, RM 9 <br />
                 Opp Makerere Main Gate, Kampala.
               </p>
-              <p>MM Plaza 3rd Floor Rm T20</p>
+              <p>MM Plaza 3rd Floor Rm HT20</p>
             </div>
           </div>
         </div>
         <div className="contact__wrapper2">
           <h2>Do You Have Any Questions</h2>
           <form>
-            <div className="contact__inputs">
-              <input
-                type="text"
-                placeholder="Name"
-                style={{ marginRight: "10px" }}
-              />
-              <input type="text" placeholder="Email" />
-            </div>{" "}
+            <input type="text" className="form__input" placeholder="Name" />
             <br />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="contact__sub"
-            />{" "}
+            <input type="email" className="form__input" placeholder="Email" />
             <br />
-            <textarea placeholder="Message" cols="70" rows="5" />
+            <textarea placeholder="message" rows="6" />
             <br />
-            <button className="contact__button">SEND MESSAGE</button>
+            <button className="contact__button">Send</button>
           </form>
         </div>
       </div>

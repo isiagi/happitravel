@@ -60,6 +60,11 @@
     flex-wrap: wrap;
 }
 
+input, textarea {
+  width: 100%;
+  display: block;
+}
+
 .contact__sub {
     width: 500px;
 }
@@ -67,7 +72,9 @@
 .contact__button {
     background-color: #fffe00;
     color: #433b6d;
-    padding: 2rem;
+    padding: 1.3rem;
+    width: 100%;
+    display: block;
 }
 
 @media screen and (max-width: 991px) {

@@ -1,4 +1,5 @@
-import img from "../../assets/images/2.jpg";
+import { Link } from "react-router-dom";
+import img from "../../assets/images/jump.jpg";
 import ne from "../../assets/images/new.jpg";
 
 import "./hero2.css";
@@ -13,14 +14,13 @@ const Hero2 = () => {
         <div className="hero2__wrapper1">
           <h2>Welcome To Happitravel and logisticcs</h2>
           <p>
-            Happi Travel is regulated Happi Group of companies aiming travel to
-            Europea countries
+            Happi Travel and Logistics is a legal company aiming travel to
+            Europea countries for education, stay and visits.
           </p>
           <p>
-            Happi Travel is regulated Happi Group of companies aiming travel to
-            Europea countries
+          Happi Travel and Logistics is a legal company here to help you with all of your logistics work like Air Frieghts and More.
           </p>
-          <button>Learn More</button>
+          <button><Link to='/service'>Learn More</Link></button>
         </div>
         <div className="hero2__wrapper2">
           <div>
@@ -37,42 +37,51 @@ const Hero2 = () => {
             <h2 style={{ color: "#270da7" }}>Work</h2>
             <h2>01</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>We help you Work abroad with a valid work permit.</p>
         </div>
         <div className="hero2__sub">
           <div className="hero2__sub1">
             <h2 style={{ color: "#270da7" }}>Live</h2>
             <h2>02</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>Gain Parmanent Residence for you and your family Abroad</p>
         </div>
         <div className="hero2__sub">
           <div className="hero2__sub1">
             <h2 style={{ color: "#270da7" }}>Study</h2>
             <h2>03</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>
+            Study in US, Canada, Poland, Isreal and Hungray. Scholarships also
+            available
+          </p>
         </div>
         <div className="hero2__sub">
           <div className="hero2__sub1">
             <h2 style={{ color: "#270da7" }}>Air Frieghts</h2>
             <h2>04</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>
+            We provide airline dealings, storage, VAT and import duty,
+            postponement
+          </p>
         </div>
         <div className="hero2__sub">
           <div className="hero2__sub1">
             <h2 style={{ color: "#270da7" }}>Sea Frieghts</h2>
             <h2>05</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>
+            We handle sea freight (general cargo, specialized cargo and heavy
+            equipment.
+          </p>
         </div>
         <div className="hero2__sub">
           <div className="hero2__sub1">
             <h2 style={{ color: "#270da7" }}>Clearing And Forwarding</h2>
             <h2>06</h2>
           </div>
-          <p>We help you Work abroad</p>
+          <p>Let us handle your procurement issues with elegance</p>
         </div>
       </div>
     </div>

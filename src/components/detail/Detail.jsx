@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import img1 from "../../assets/images/ship1.jpeg";
@@ -9,10 +9,13 @@ import img4 from "../../assets/images/air2.jpg";
 import img5 from "../../assets/images/for.jpeg";
 import img6 from "../../assets/images/save1.jpg";
 import img7 from "../../assets/images/nice.jpg";
+import img8 from "../../assets/images/4.jpg";
+import img9 from "../../assets/images/2.jpg";
 
 import "./detail.css";
 import "../course/cor.css";
 import Tr from "./Tr";
+import Side from "./Side";
 
 const Detail = () => {
   React.useEffect(() => {
@@ -28,13 +31,15 @@ const Detail = () => {
       case "water":
         return img1;
       case "passport":
-        return "Passport Processing";
+        return img3;
       case "visa":
         return img3;
       case "clear":
         return img5;
       case "permanent":
         return img6;
+      case "study":
+        return img9;
       default:
         return null;
     }
@@ -77,6 +82,8 @@ const Detail = () => {
                 return "Forwarding And Clearing";
               case "permanent":
                 return "Permanent Residency";
+              case "study":
+                return "Study Your Bachelor's Abroad";
               default:
                 return null;
             }
@@ -92,133 +99,106 @@ const Detail = () => {
           gap: "10px",
         }}
       >
-        <div className="course__cat">
-          <div>
-            <h4>Services</h4>
-            <div className="category__hey"></div>
-            <div>
-              <ul>
-                <li>
-                  <Link to="/detail/air">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Air Frieght</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/water">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Water Frieght</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/clear">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Clearing And Forwarding</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/visa">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Visa Processing</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/passport">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Passport Processing</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/study">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Study Abroad</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/permanent">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Permanent Disdence Abroad</p>
-                    </div>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/detail/work">
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                      }}
-                    >
-                      <p>Work Abroad</p>
-                    </div>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Side />
 
         {(() => {
           switch (para.id) {
             case "air":
-              return <Tr title={img4} head="Air Frieght" />;
+              return (
+                <Tr
+                  title={img4}
+                  head="Air Frieght"
+                  data="We offer airport-to-airport Air Freight Services worldwide to any airport worldwide with customs clearance services available anywhere."
+                  data1="We have excellent relationship with all major shipping lines and enjoy. Need it urgent, need it to be delivered within a limited time. Air freight is the ideal option for time constraint shipments"
+                  services={[
+                    "Pickup of cargo from your Door step",
+                    "Flight booking to match your requirements",
+                    "Flight booking to match your requirements",
+                  ]}
+                />
+              );
             case "water":
-              return <Tr title={img1} head="Water Frieght" />;
+              return (
+                <Tr
+                  title={img1}
+                  head="Water Frieght"
+                  data="Maritime Logistics offers a robust and efficient Sea freight service from the UK. With over 20 years’ experience in the Industry we pride ourselves on achieving results above expectations."
+                  data1="Our worldwide network covering over 140 countries enables us to handle all our clients Import, Export and Cross trade Sea Cargo movements of all types globally door to door while providing them with the technical expertise related to the proper documents needed for various banks and LC’s"
+                  services={[
+                    "Full container (FCL) of all sizes",
+                    "Partial Shipment (LCL – Less Container Load)",
+                    "Full and Part Charter services",
+                    "Project Sea Freight Cargo",
+                    "Cross & Exhibition shipments",
+                    "Break Bulk and RORO cargo",
+                    "Global Groupage/ Consolidation service",
+                    "Flexible freight options (Direct / Transshipment)",
+                    "Trans-shipment Cargo (Multimodal Sea – Air/Land)",
+                  ]}
+                />
+              );
             case "clear":
-              return <Tr title={img5} head="Clearing And Forwarding" />;
+              return (
+                <Tr
+                  title={img5}
+                  head="Clearing And Forwarding"
+                  data="hey"
+                  data1="hello"
+                />
+              );
             case "visa":
-              return <Tr title={img3} head="Visa Processing" />;
+              return (
+                <Tr
+                  title={img3}
+                  head="Visa Processing"
+                  data="You need a visa!!!, HappiTravel and Logistics can help you process a visa in a most efficient, legitimate and timely bound manner"
+                  services={[
+                    "Fill in forms and advise of Visa application",
+                    "Tourist Visa",
+                    "Student Visa",
+                    "Medical Visa",
+                    "Working Visa",
+                  ]}
+                  // data1="hello"
+                />
+              );
             case "passport":
-              return <Tr title={img1} head="Passport Processing" />;
+              return (
+                <Tr
+                  title={img1}
+                  head="Passport Processing"
+                  data="Process your passport with Happi Travel and logistics. With a long experience in travel field, we assure you a valid and timely processing of your passport to meet with your timely travel expectation"
+                  // data1="hello"
+                />
+              );
             case "study":
-              return <Tr title={img1} head="Study Abroad" />;
+              return (
+                <Tr
+                  title={img8}
+                  head="Study Abroad"
+                  data="Study your Bachelor's Degree in Europe with a fully funded scholarship in Marketing, Civil Engineering, Petroleum Engineering, Computer Science and Technology, Medial  Caregiver, Cosmetologist, Business Administration, Procurement and Logistics, Hospitality Programs and Accounting and Finance."
+                  data1="Your Proffessional Career Path is rightfully secured with the rigth education you need to make it through and see yourself grow as your career also grows."
+                  services={["Free Tution", "Free Accomadation"]}
+                  hey='true'
+                />
+              );
             case "work":
-              return <Tr title={img1} head="Work Abroad" />;
+              return (
+                <Tr title={img1} head="Work Abroad" data="hey" data1="hello" />
+              );
             case "permanent":
-              return <Tr title={img7} head="Permanent Residency" />;
+              return (
+                <Tr
+                  title={img7}
+                  head="Permanent Residency"
+                  data="Our worldwide network covering over 140 countries enables us to handle all our clients Import, Export and Cross trade Sea Cargo movements of all types globally door to door while providing them with the technical expertise related to the proper documents needed for various banks and LC’s"
+                  data1="hello"
+                />
+              );
             default:
-              return <Tr title={img2} head="Air Frieght" />;
+              return (
+                <Tr title={img2} head="Air Frieght" data="hey" data1="hello" />
+              );
           }
         })()}
       </div>
