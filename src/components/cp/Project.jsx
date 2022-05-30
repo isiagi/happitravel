@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
 
 import {data} from '../../utils/data'
 
@@ -36,7 +37,7 @@ const Project = () => {
       </div>
       <div className="project__card">
         <Carousel responsive={responsive} autoPlay={true} infinite={true}>
-          {data.map(({img, head, content, tag, id}) => {
+          {data.map(({img, head, content, tag, id, path}) => {
             return (
               <div key={id} className="card card-shadow">
                 <div className="card-img">
@@ -49,7 +50,7 @@ const Project = () => {
                     {content}
                   </p>
                   <hr />
-                  <button>View More</button>
+                  <button><Link to={path}>View More</Link></button>
                 </div>
               </div>
             );

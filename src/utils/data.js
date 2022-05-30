@@ -10,6 +10,7 @@ const data = [
     tag: "Business",
     head: "Business Administration",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const data = [
     tag: "Engineering",
     head: "Computer Science",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const data = [
     tag: "Social",
     head: "Swasa",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 4,
@@ -31,6 +34,7 @@ const data = [
     tag: "Business",
     head: "Accounting and Finance",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ const data = [
     tag: "Engineering",
     head: "Civil Engineering",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 6,
@@ -45,6 +50,7 @@ const data = [
     tag: "Business",
     head: "Procurement and Logistics",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 7,
@@ -52,6 +58,7 @@ const data = [
     tag: "Business",
     head: "Hospitality Programs",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 8,
@@ -59,6 +66,7 @@ const data = [
     tag: "Engineering",
     head: "Petroleum Engineering",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
   {
     id: 9,
@@ -66,6 +74,7 @@ const data = [
     tag: "Business",
     head: "Marketing",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
+    path: `/courses/business`
   },
 ];
 
