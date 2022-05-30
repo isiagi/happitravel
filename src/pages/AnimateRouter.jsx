@@ -3,7 +3,6 @@ import { AnimatePresence } from "framer-motion";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import HomePage from "./HomePage";
-import Courses from "../components/course/Course";
 import NotFound from "../components/not/NotFound";
 import CourseItem from "../components/course/CourseItem";
 import BankItem from "../components/course/Bank";

@@ -2,7 +2,7 @@ import { GiCargoShip } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import "./service.css";
 import { SiYourtraveldottv } from "react-icons/si";
-import { FaHotel } from "react-icons/fa";
+// import { FaHotel } from "react-icons/fa";
 import { FaPassport } from "react-icons/fa";
 import { GrUserWorker } from "react-icons/gr";
 import { MdNightsStay } from "react-icons/md";
