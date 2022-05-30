@@ -9,72 +9,81 @@ const data = [
     img: img,
     tag: "Business",
     head: "Business Administration",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 2,
-    img: img1,
-    tag: "Engineering",
-    head: "Computer Science",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 3,
-    img: img2,
-    tag: "Social",
-    head: "Swasa",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 4,
-    img: img3,
-    tag: "Business",
-    head: "Accounting and Finance",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 5,
-    img: img1,
-    tag: "Engineering",
-    head: "Civil Engineering",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 6,
-    img: img3,
-    tag: "Business",
-    head: "Procurement and Logistics",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 7,
-    img: img2,
-    tag: "Business",
-    head: "Hospitality Programs",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
-  },
-  {
-    id: 8,
-    img: img,
-    tag: "Engineering",
-    head: "Petroleum Engineering",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
+    content:
+      "We have fully funded scholaship of Business Administration in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
   },
   {
     id: 9,
     img: img3,
     tag: "Business",
     head: "Marketing",
-    content: "We have fully funded scholaship in Marketing, Civil Engineering",
-    path: `/courses/business`
+    content:
+      "We have fully funded scholaship of Marketing in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 2,
+    img: img1,
+    tag: "Engineering",
+    head: "Computer Science",
+    content:
+      "We have fully funded scholaship of Computer Science in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 3,
+    img: img2,
+    tag: "Social",
+    head: "Swasa",
+    content:
+      "We have fully funded scholaship of Swasa in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 4,
+    img: img3,
+    tag: "Business",
+    head: "Accounting and Finance",
+    content:
+      "We have fully funded scholaship of Accounting and Finance in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 5,
+    img: img1,
+    tag: "Engineering",
+    head: "Civil Engineering",
+    content:
+      "We have fully funded scholaship of Civil Engineering in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 6,
+    img: img3,
+    tag: "Business",
+    head: "Procurement and Logistics",
+    content:
+      "We have fully funded scholaship of Procurement and Logistics in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 7,
+    img: img2,
+    tag: "Business",
+    head: "Hospitality Programs",
+    content:
+      "We have fully funded scholaship of Hospitality Programs in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
+  },
+  {
+    id: 8,
+    img: img,
+    tag: "Engineering",
+    head: "Petroleum Engineering",
+    content:
+      "We have fully funded scholaship of Petroleum Engineering in US, Canada, Isreal, Poland and Hungary",
+    path: `/contact`,
   },
 ];
 
@@ -130,7 +139,7 @@ const Business = [
   {
     id: 16,
     img: img3,
-    let: 'studies',
+    let: "studies",
     tag: "Business",
     head: "Hospitality Programs",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -138,7 +147,7 @@ const Business = [
   {
     id: 17,
     img: img,
-    let: 'studies',
+    let: "studies",
     tag: "Business",
     head: "Procurement and Logistics",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -146,7 +155,7 @@ const Business = [
   {
     id: 18,
     img: img2,
-    let: 'studies',
+    let: "studies",
     tag: "Business",
     head: "Marketing",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -157,7 +166,7 @@ const cse = [
   {
     id: 19,
     img: img,
-    let: 'cse',
+    let: "cse",
     tag: "Engineering",
     head: "Computer Science",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -168,7 +177,7 @@ const bank = [
   {
     id: 20,
     img: img1,
-    let: 'bank',
+    let: "bank",
     tag: "Business",
     head: "Accounting and Finance",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -179,7 +188,7 @@ const social = [
   {
     id: 21,
     img: img2,
-    let: 'social',
+    let: "social",
     tag: "Social",
     head: "Swasa",
     content: "We have fully funded scholaship in Marketing, Civil Engineering",
@@ -189,7 +198,7 @@ const social = [
 const eng = [
   {
     id: 22,
-    let: 'civil',
+    let: "civil",
     img: img3,
     tag: "Engineering",
     head: "Civil Engineering",
@@ -197,6 +206,16 @@ const eng = [
   },
 ];
 
-const all = [Business, bank, social,eng]
+const all = [Business, bank, social, eng];
 
-export { latestCourses, latestNews, cse, Business, bank, social, data, eng, all };
+export {
+  latestCourses,
+  latestNews,
+  cse,
+  Business,
+  bank,
+  social,
+  data,
+  eng,
+  all,
+};

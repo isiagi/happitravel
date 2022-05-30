@@ -179,6 +179,7 @@ const Detail = () => {
                   data="Study your Bachelor's Degree in Europe with a fully funded scholarship in Marketing, Civil Engineering, Petroleum Engineering, Computer Science and Technology, Medial  Caregiver, Cosmetologist, Business Administration, Procurement and Logistics, Hospitality Programs and Accounting and Finance."
                   data1="Your Proffessional Career Path is rightfully secured with the rigth education you need to make it through and see yourself grow as your career also grows."
                   services={["Free Tution", "Free Accomadation"]}
+                  hey='true'
                 />
               );
             case "work":

@@ -8,9 +8,23 @@ import { GrUserWorker } from "react-icons/gr";
 import { MdNightsStay } from "react-icons/md";
 import { IoAirplaneOutline } from "react-icons/io5";
 import { GiEarthAfricaEurope } from "react-icons/gi";
+import { motion } from "framer-motion";
 import React from "react";
 
 const services = [
+  {
+    id: 7,
+    title: "STUDY ABROAD",
+    link: "/detail/study",
+    icon: <SiYourtraveldottv />,
+  },
+  {
+    id: 8,
+    title: "PERMANENT RESIDENCE ABROAD",
+    link: "/detail/permanent",
+    icon: <MdNightsStay />,
+  },
+  { id: 9, title: "WORK ABROAD", link: "/detail/work", icon: <GrUserWorker /> },
   { id: 1, title: "SEA FREIGH", link: "/detail/air", icon: <GiCargoShip /> },
   {
     id: 2,
@@ -37,19 +51,6 @@ const services = [
     icon: <IoAirplaneOutline />,
   },
   { id: 6, title: "AIR TICKET PROCESSING", icon: <GrUserWorker /> },
-  {
-    id: 7,
-    title: "STUDY ABROAD",
-    link: "/detail/study",
-    icon: <SiYourtraveldottv />,
-  },
-  {
-    id: 8,
-    title: "PERMANENT RESIDENCE ABROAD",
-    link: "/detail/permanent",
-    icon: <MdNightsStay />,
-  },
-  { id: 9, title: "WORK ABROAD", link: "/detail/work", icon: <GrUserWorker /> },
 ];
 
 const Service = () => {
@@ -58,7 +59,13 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="service__container container" id="service">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exist={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      className="service__container container"
+    >
       <h1 style={{ textAlign: "center", padding: "9rem 0", color: "#fff" }}>
         Our Services
       </h1>
@@ -74,7 +81,7 @@ const Service = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -28,7 +28,7 @@ const Project = () => {
   };
   return (
     <div className="project__container">
-      <div style={{ textAlign: "center", maxWidth: "500px" }}>
+      <div style={{ textAlign: "center", maxWidth: "500px",paddingTop: '4rem' }}>
         <h2 style={{ fontSize: "3rem" }}>Our Lastest Courses</h2>
         <p style={{ paddingBlock: "2rem" }}>
           Happi Travel is regulated Happi Group of companies aiming travel to
@@ -50,7 +50,7 @@ const Project = () => {
                     {content}
                   </p>
                   <hr />
-                  <button><Link to={path}>View More</Link></button>
+                  <button><Link to={path}>Contact Us</Link></button>
                 </div>
               </div>
             );

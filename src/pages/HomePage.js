@@ -7,6 +7,7 @@ import Vid from "../components/vid/Vid";
 import News from "../components/news";
 import Service from "./service/Service";
 import Good from "../components/good/Good";
+import Hey from "../components/hey/Hey";
 
 const Index = () => {
   React.useEffect(() => {
@@ -26,7 +27,8 @@ const Index = () => {
       <Service />
       <Project />
       <Vid />
-      <News />
+      {/* <News /> */}
+      <Hey />
     </motion.div>
   );
 };

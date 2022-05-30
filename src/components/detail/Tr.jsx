@@ -5,7 +5,7 @@ import "./detail.css";
 import "../course/cor.css";
 import { Link } from "react-router-dom";
 
-const Tr = ({ title, head, data, data1, services }) => {
+const Tr = ({ title, head, data, data1, services, hey }) => {
   return (
     <div>
       <div

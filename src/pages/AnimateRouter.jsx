@@ -12,6 +12,7 @@ import Contact from "../components/contact/Contact";
 import Social from '../components/course/Social'
 import Detail from "../components/detail/Detail";
 import Service from "./service/Service";
+import Course from "./Course.jsx";
 
 const Router = () => {
   const location = useLocation();
@@ -19,7 +20,7 @@ const Router = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/courses/*" element={<Courses />}>
+        <Route path="/courses/*" element={<Course />}>
           <Route path="civil" element={<CourseItem />} />
           <Route path="studies" element={<CourseItem />} />
           <Route path="cse" element={<CourseItem />} />
