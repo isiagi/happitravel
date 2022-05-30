@@ -9,6 +9,8 @@ import img4 from "../../assets/images/air2.jpg";
 import img5 from "../../assets/images/for.jpeg";
 import img6 from "../../assets/images/save1.jpg";
 import img7 from "../../assets/images/nice.jpg";
+import img8 from "../../assets/images/4.jpg";
+import img9 from "../../assets/images/2.jpg";
 
 import "./detail.css";
 import "../course/cor.css";
@@ -29,13 +31,15 @@ const Detail = () => {
       case "water":
         return img1;
       case "passport":
-        return "Passport Processing";
+        return img3;
       case "visa":
         return img3;
       case "clear":
         return img5;
       case "permanent":
         return img6;
+      case "study":
+        return img9;
       default:
         return null;
     }
@@ -78,6 +82,8 @@ const Detail = () => {
                 return "Forwarding And Clearing";
               case "permanent":
                 return "Permanent Residency";
+              case "study":
+                return "Study Your Bachelor's Abroad";
               default:
                 return null;
             }
@@ -145,8 +151,15 @@ const Detail = () => {
                 <Tr
                   title={img3}
                   head="Visa Processing"
-                  data="hey"
-                  data1="hello"
+                  data="You need a visa!!!, HappiTravel and Logistics can help you process a visa in a most efficient, legitimate and timely bound manner"
+                  services={[
+                    "Fill in forms and advise of Visa application",
+                    "Tourist Visa",
+                    "Student Visa",
+                    "Medical Visa",
+                    "Working Visa",
+                  ]}
+                  // data1="hello"
                 />
               );
             case "passport":
@@ -154,13 +167,19 @@ const Detail = () => {
                 <Tr
                   title={img1}
                   head="Passport Processing"
-                  data="hey"
-                  data1="hello"
+                  data="Process your passport with Happi Travel and logistics. With a long experience in travel field, we assure you a valid and timely processing of your passport to meet with your timely travel expectation"
+                  // data1="hello"
                 />
               );
             case "study":
               return (
-                <Tr title={img1} head="Study Abroad" data="hey" data1="hello" />
+                <Tr
+                  title={img8}
+                  head="Study Abroad"
+                  data="Study your Bachelor's Degree in Europe with a fully funded scholarship in Marketing, Civil Engineering, Petroleum Engineering, Computer Science and Technology, Medial  Caregiver, Cosmetologist, Business Administration, Procurement and Logistics, Hospitality Programs and Accounting and Finance."
+                  data1="Your Proffessional Career Path is rightfully secured with the rigth education you need to make it through and see yourself grow as your career also grows."
+                  services={["Free Tution", "Free Accomadation"]}
+                />
               );
             case "work":
               return (

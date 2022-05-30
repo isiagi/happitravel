@@ -8,3 +8,25 @@
     align-items: center;
     justify-content: center;
   }
+
+  .detail__talk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #270da7;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .detail__talk > button {
+    color: #433b6d;
+    background-color: #fffe00;
+    padding: 1rem;
+  }
+
+  .detail__talk > button:hover {
+    background-color: #433b6d;
+    color: #fffe00;
+    padding: 1rem;
+  }
