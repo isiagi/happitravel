@@ -11,6 +11,8 @@ import img6 from "../../assets/images/save1.jpg";
 import img7 from "../../assets/images/nice.jpg";
 import img8 from "../../assets/images/4.jpg";
 import img9 from "../../assets/images/2.jpg";
+import img10 from "../../assets/images/work.jpg";
+import img11 from "../../assets/images/work1.jpg";
 
 import "./detail.css";
 import "../course/cor.css";
@@ -40,6 +42,8 @@ const Detail = () => {
         return img6;
       case "study":
         return img9;
+      case "work":
+        return img11;
       default:
         return null;
     }
@@ -84,6 +88,8 @@ const Detail = () => {
                 return "Permanent Residency";
               case "study":
                 return "Study Your Bachelor's Abroad";
+                case "work":
+                return "Work Abroad With US";
               default:
                 return null;
             }
@@ -142,8 +148,8 @@ const Detail = () => {
                 <Tr
                   title={img5}
                   head="Clearing And Forwarding"
-                  data="hey"
-                  data1="hello"
+                  data="We handle all of your logistics paper with legal authorization."
+                  // data1="hello"
                 />
               );
             case "visa":
@@ -165,7 +171,7 @@ const Detail = () => {
             case "passport":
               return (
                 <Tr
-                  title={img1}
+                  title={img3}
                   head="Passport Processing"
                   data="Process your passport with Happi Travel and logistics. With a long experience in travel field, we assure you a valid and timely processing of your passport to meet with your timely travel expectation"
                   // data1="hello"
@@ -179,12 +185,18 @@ const Detail = () => {
                   data="Study your Bachelor's Degree in Europe with a fully funded scholarship in Marketing, Civil Engineering, Petroleum Engineering, Computer Science and Technology, Medial  Caregiver, Cosmetologist, Business Administration, Procurement and Logistics, Hospitality Programs and Accounting and Finance."
                   data1="Your Proffessional Career Path is rightfully secured with the rigth education you need to make it through and see yourself grow as your career also grows."
                   services={["Free Tution", "Free Accomadation"]}
-                  hey='true'
+                  hey="true"
                 />
               );
             case "work":
               return (
-                <Tr title={img1} head="Work Abroad" data="hey" data1="hello" />
+                <Tr
+                  title={img10}
+                  head="Work Abroad"
+                  data="Work abroad with legitmate credential and face no restriction"
+                  data1="We help work in Poland, Canada, US, Isreal and Hungray"
+                  services={["Work Permits"]}
+                />
               );
             case "permanent":
               return (
@@ -192,7 +204,7 @@ const Detail = () => {
                   title={img7}
                   head="Permanent Residency"
                   data="Our worldwide network covering over 140 countries enables us to handle all our clients Import, Export and Cross trade Sea Cargo movements of all types globally door to door while providing them with the technical expertise related to the proper documents needed for various banks and LC’s"
-                  data1="hello"
+                  // data1="hello"
                 />
               );
             default:
