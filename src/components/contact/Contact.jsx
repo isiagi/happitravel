@@ -53,7 +53,7 @@ const Contact = () => {
             <div>
               <h3>Location</h3>
               <p>
-                Ham Towers,Level 3, RM 9 <br />
+                Ham Towers,Level 3, RM HT28 <br />
                 Opp Makerere Main Gate, Kampala.
               </p>
               <p>MM Plaza 3rd Floor Rm HT20</p>
