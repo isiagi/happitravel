@@ -158,7 +158,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p>
-                      Ham Towers,Level 3, RM 9 <br />
+                      Ham Towers,Level 3, RM HT28 <br />
                       Opp Makerere Main Gate, Kampala.
                     </p>
                     <p>MM Plaza 3rd Floor Rm T20</p>
