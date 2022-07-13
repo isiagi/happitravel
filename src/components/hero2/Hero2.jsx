@@ -9,7 +9,7 @@ const Hero2 = () => {
     <div className="hero2__conatiner container">
       <div
         className="place__items__center"
-        style={{ gap: "7rem", flexWrap: "wrap" }}
+        style={{ gap: "7rem", flexWrap: "wrap", marginTop: "7vh" }}
       >
         <div className="hero2__wrapper1">
           <h2>Welcome To Happitravel and logisticcs</h2>
@@ -18,9 +18,12 @@ const Hero2 = () => {
             Europea countries for education, stay and visits.
           </p>
           <p>
-          Happi Travel and Logistics is a legal company here to help you with all of your logistics work like Air Frieghts and More.
+            Happi Travel and Logistics is a legal company here to help you with
+            all of your logistics work like Air Frieghts and More.
           </p>
-          <button><Link to='/service'>Learn More</Link></button>
+          <button>
+            <Link to="/service">Learn More</Link>
+          </button>
         </div>
         <div className="hero2__wrapper2">
           <div>
@@ -52,8 +55,7 @@ const Hero2 = () => {
             <h2>03</h2>
           </div>
           <p>
-            Study in US, Canada, Poland, Isreal and Hungray. Scholarships also
-            available
+            Study in US, Canada, China and Hungray. Scholarships also available
           </p>
         </div>
         <div className="hero2__sub">
